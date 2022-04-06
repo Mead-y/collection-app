@@ -44,13 +44,15 @@ input.field {
     margin: 10px 10px 0 0px;
 }
 
-button{
-    font-size:30px;
-    display:grid;
-    background-color:blue;
-    color:yellow;
-    padding:10px;
-    border-radius: 5px;
-    margin: 10px 10px 10px 0;
-    border: 1px yellow solid;
+
+
+
+input[type=submit] {
+    background: blue;
+    color: yellow;
+    border-style: 1px black solid;
+    height: 47px;
+    width: 190px;
+    font-size: 30px;
+    border-radius: 180px;
 }
