@@ -9,22 +9,20 @@ class displayAnimalsTest extends Testcase {
         $case = displayAnimals($input);
         $this -> assertEquals($expected, $case);
     }
-}
 
-class displayAnimalsTest extends Testcase {
     public function testFailureDisplayAnimal(){
-        $input = 'hello';
+        $input = [];
 
-        $expected = "<div class='animals'><img src='image' alt = 'Polar Bear'><h2> Name: Polar Bear<h2> Status: Vulnerable Species<h2> Weight: 600 KG<h2> Threat: Climate Change<h2> Diet: Carnivore<h2> Arctic</div>";
+        $expected = "You have not collected any animals yet!";
         $case = displayAnimals($input);
         $this -> assertEquals($expected, $case);
     }
-}
 
-class displayAnimalsTest extends Testcase {
-    public function testMaformedDisplayAnimal(){
+
+    public function testMalformedDisplayAnimal(){
         $input = 1;
         $this->expectException(typeError::class);
+        displayAnimals(1);
     }
 }
 

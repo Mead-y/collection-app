@@ -21,9 +21,6 @@ $allAnimals = getAllAnimals($db);
 </div>
 <main>
     <?php
-    if (!$allAnimals) {
-        echo "You have not collected any animals yet!";
-    }
 
     echo displayAnimals($allAnimals);
 

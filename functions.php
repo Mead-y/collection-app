@@ -31,7 +31,12 @@ function getAllAnimals($db)
  *
  * @return mixed
  */
-function displayAnimals($allAnimals) {
+function displayAnimals(array $allAnimals) {
+
+    if (empty($allAnimals)) {
+        return "You have not collected any animals yet!";
+    }
+
     $result = '';
     foreach ($allAnimals as $animal) {
         $result .= "<div class='animals'>";
