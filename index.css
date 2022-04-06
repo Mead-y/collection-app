@@ -1,0 +1,61 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+    font-family: MyriadTilt;
+}
+
+
+@font-face {
+    font-family: MyriadTilt;
+    src: url("Myriad Tilt.otf") format("opentype");
+}
+
+body {
+    background-image: url(https://www.yorkshirewildlifepark.com/app/dist/img/de43b65015341e73d6274d9a822a36b6.png);
+    background-color: #46683d;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    border: 10px maroon dotted;
+
+}
+
+h1 {
+    font-size: 200px;
+    color: white;
+
+}
+
+.paragraph h2 {
+    color:white;
+    margin: 50px;
+    font-size: 94px;
+    display: flex;
+    justify-content: center;
+
+}
+
+img {
+    display: flex;
+    border: 3px yellow solid;
+    border-radius:180px;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: space-around;
+    color:whitesmoke;
+    padding:20px;
+    font-size: 50px;
+}
+
+
