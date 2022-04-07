@@ -15,6 +15,7 @@ $allAnimals = getAllAnimals($db);
 
 <header>
     <h1> Animal Collection</h1>
+    <button><a href="Form.html">Click to add your own Animal</a></button>
 </header>
 <div class="paragraph">
     <h2> Browse your animal collection</h2>
@@ -23,7 +24,6 @@ $allAnimals = getAllAnimals($db);
     <?php
 
     echo displayAnimals($allAnimals);
-
     ?>
 
 

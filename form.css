@@ -1,7 +1,8 @@
 * {
-    margin: auto;
+    margin: 10px;
     box-sizing: border-box;
     font-family: MyriadTilt;
+
 }
 
 
@@ -15,18 +16,47 @@ body {
     background-color: #46683d;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 40px;
-}
-
-header {
+header{
+    position:relative;
+    color: yellow;
     display:flex;
     justify-content: center;
-    position:relative;
-    border: 10px maroon dotted;
+    font-size: 70px;
 
+}
+label{
+    color:yellow;
+    font-size: 25px;
+    display:grid;
+    width: 20%;
+
+}
+
+form{
+    display:grid;
+    justify-content: center;
+    width:100%;
+
+}
+
+
+input.field {
+    font-size:25px;
+    margin: 10px 10px 0 0px;
+}
+
+
+
+
+input[type=submit] {
+    color: white;
+    border-style: 1px black solid;
+    height: 67px;
+    width: 190px;
+    font-size: 30px;
+    border-radius: 180px;
+    background-image: url(https://i.pinimg.com/originals/6a/1f/74/6a1f74043e48b88f4d52a11961dcabb4.jpg);
+    background-color: 	#FFA500;
 }
 
 button {
@@ -44,41 +74,6 @@ button {
 }
 
 a {
-    color: White;
+    color:white;
     text-decoration:none;
 }
-
-h1 {
-    font-size: 125px;
-    color: yellow;
-
-}
-
-.paragraph h2 {
-    color:yellow;
-    margin: 50px;
-    font-size: 94px;
-    display: flex;
-    justify-content: center;
-
-}
-
-img {
-    display: flex;
-    border: 3px yellow solid;
-    border-radius:180px;
-    max-width: 320px;
-
-}
-
-
-h2 {
-    display: flex;
-    justify-content: space-around;
-    color:whitesmoke;
-    padding:20px;
-    font-size: 50px;
-}
-
-div.animals
-
