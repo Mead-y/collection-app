@@ -24,8 +24,28 @@ main {
 header {
     display:flex;
     justify-content: center;
+    position:relative;
     border: 10px maroon dotted;
 
+}
+
+button {
+    position: absolute;
+    right:17px;
+    top:33px;
+    color: white;
+    border-style: 1px black solid;
+    height: 67px;
+    width: 190px;
+    font-size: 30px;
+    border-radius: 180px;
+    background-image: url(https://i.pinimg.com/originals/6a/1f/74/6a1f74043e48b88f4d52a11961dcabb4.jpg);
+    background-color: 	#FFA500;
+}
+
+a {
+    color: White;
+    text-decoration:none;
 }
 
 h1 {
@@ -47,7 +67,8 @@ img {
     display: flex;
     border: 3px yellow solid;
     border-radius:180px;
-    max-width: 326px;
+    max-width: 320px;
+
 }
 
 

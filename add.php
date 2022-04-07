@@ -2,14 +2,16 @@
 require './functions.php';
 $db = connectToDatabase();
 
+
+
 if (isset($_POST['name'])) {
-    $name = $_POST['name'];
-    $status = $_POST['status'];
-    $weight = $_POST['weight'];
-    $threat = $_POST['threat'];
-    $diet = $_POST['diet'];
-    $distribution = $_POST['distribution'];
-    $image = $_POST['image'];
+    $name = cleanedInput($_POST['name']);
+    $status = cleanedInput($_POST['status']);
+    $weight = cleanedInput($_POST['weight']);
+    $threat = cleanedInput($_POST['threat']);
+    $diet = cleanedInput($_POST['diet']);
+    $distribution = cleanedInput($_POST['distribution']);
+    $image = cleanedInput($_POST['image']);
 
 
     $query = $db->prepare("INSERT INTO `animal_stats` (`name`, `status`, `weight_kg`, `threat`, `diet`, `distribution`, `image`) VALUES (:name, :status, :weight,:threat,:diet,:distribution,:image)");
@@ -27,5 +29,10 @@ if (isset($_POST['name'])) {
     header('Location: animals.php');
 
     }
-    
+
+
+if (isset($_POST['name'])) {
+    $trimmedName = trim($name);
+    $cleanedName = htmlspecialchars($trimmedName);
+}
 

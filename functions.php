@@ -52,5 +52,8 @@ function displayAnimals(array $allAnimals) {
     return $result;
 }
 
-
-
+function cleanedInput($data) {
+    $trimmedData = trim($data);
+    $cleanedData = htmlspecialchars($trimmedData);
+    return $cleanedData;
+}
