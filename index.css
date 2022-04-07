@@ -4,6 +4,10 @@
     font-family: MyriadTilt;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 @font-face {
     font-family: MyriadTilt;
@@ -29,9 +33,9 @@ header {
 
 }
 
-button {
+header button {
     position: absolute;
-    right:17px;
+    left:83%;
     top:33px;
     color: white;
     border-style: 1px black solid;
@@ -63,6 +67,15 @@ h1 {
 
 }
 
+.paragraph h3 {
+    color:red;
+    margin: 50px;
+    font-size: 94px;
+    display: flex;
+    justify-content: center;
+
+}
+
 img {
     display: flex;
     border: 3px yellow solid;
@@ -80,5 +93,34 @@ h2 {
     font-size: 50px;
 }
 
-div.animals
+/*div.animals*/
+
+
+footer {
+    display: flex;
+    position:relative;
+    border-top: 10px maroon dotted;
+}
+
+footer h2 {
+    position:absolute;
+    top:15px;
+    font-size:50px
+}
+
+ button {
+     position:absolute;
+     left: 44%;
+     top: 30px;
+    color: white;
+    border-style: 1px black solid;
+    height: 39px;
+    width: 190px;
+    font-size: 30px;
+    border-radius: 180px;
+    background-image: url(https://i.pinimg.com/originals/6a/1f/74/6a1f74043e48b88f4d52a11961dcabb4.jpg);
+    background-color: 	#FFA500;
+}
+
+
 

@@ -58,7 +58,7 @@ function displayAnimals(array $allAnimals) {
  * @param $data
  * @return string
  */
-function cleanedInput($data) {
+function cleanedInput($data):string {
     $trimmedData = trim($data);
     $cleanedData = htmlspecialchars($trimmedData);
     return $cleanedData;

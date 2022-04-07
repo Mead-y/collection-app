@@ -15,10 +15,18 @@ $allAnimals = getAllAnimals($db);
 
 <header>
     <h1> Animal Collection</h1>
-    <button><a href="Form.html">Click to add your own Animal</a></button>
+    <button>
+        <a href="Form.html">Click to add your own Animal</a>
+    </button>
+
+
 </header>
 <div class="paragraph">
     <h2> Browse your animal collection</h2>
+        <?php if (isset($_GET['error'])){
+            echo "<h3>{$_GET['error']}</h3>";
+        }
+        ?>
 </div>
 <main>
     <?php
@@ -28,6 +36,14 @@ $allAnimals = getAllAnimals($db);
 
 
 </main>
+    <footer>
+        <h2>RM</h2>
+        <div>
+        <button>
+            <a href="#">Back to the top</a>
+        </button>
+        </div>
+    </footer>
 </body>
 </html>
 
