@@ -52,5 +52,14 @@ function displayAnimals(array $allAnimals) {
     return $result;
 }
 
-
-
+/**
+ * eradicates whitespace and converts special characters to &gt
+ *
+ * @param $data
+ * @return string
+ */
+function cleanedInput($data):string {
+    $trimmedData = trim($data);
+    $cleanedData = htmlspecialchars($trimmedData);
+    return $cleanedData;
+}

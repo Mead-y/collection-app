@@ -10,14 +10,16 @@
     <h1>
         Add your own animal
     </h1>
+    <button> <a href="animals.php">Return</a></button>
 </header>
-<form>
-    <label>Animal Name:<input type="text" class="field"></label>
-    <label>Animal Status:<input type="text" class="field"></label>
-    <label>Animal Weight (KG):<input type="number" class="field"></label>
-    <label>Threat To Animal:<input type="text" class="field"></label>
-    <label>Diet:<input type="text" class="field"></label>
-    <label>Distribution:<input type="text" class="field"></label>
+<form action="add.php" method='post'>
+    <label>Animal Name:<input type="text" name = "name" class="field" placeholder="Polar Bear" required></label>
+    <label>Animal Status:<input type="text" name = "status" class="field" placeholder="Vulnerable Species" required></label>
+    <label>Animal Weight (KG):<input type="number" name="weight" class="field" placeholder="600 KG"required></label>
+    <label>Threat To Animal:<input type="text" name="threat" class="field" placeholder="Climate Change" required></label>
+    <label>Diet:<input type="text" name="diet" class="field" placeholder="Carnivore" required></label>
+    <label>Origin:<input type="text" name="distribution" class="field" placeholder="Arctic" required></label>
+    <label>Image:<input type="url" name="image" class="field" placeholder="https://image-polar-bear-nationalgeographic_1155565_16x9.jpg?w=1200" required></label>
     <input type="submit" value ="Add Animal!"/>
 </form>
 
